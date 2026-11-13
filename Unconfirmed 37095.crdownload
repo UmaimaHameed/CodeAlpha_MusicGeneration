@@ -1,6 +1,0 @@
-[pytest]
-pythonpath = .
-testpaths = tests
-filterwarnings =
-    ignore::UserWarning
-    ignore::DeprecationWarning
