@@ -1,0 +1,30 @@
+[
+ {
+  "temperature": 0.6,
+  "notes_in_key": 0.9786908279063201,
+  "variety": 0.7674666666666667,
+  "avg_melodic_jump": 1.0236666666666667,
+  "pitch_class_similarity": 0.9256894833513485
+ },
+ {
+  "temperature": 0.8,
+  "notes_in_key": 0.9654707006675448,
+  "variety": 0.8112,
+  "avg_melodic_jump": 1.2188505747126437,
+  "pitch_class_similarity": 0.951468702916833
+ },
+ {
+  "temperature": 1.0,
+  "notes_in_key": 0.9442480249642106,
+  "variety": 0.8562666666666667,
+  "avg_melodic_jump": 1.1394481284998528,
+  "pitch_class_similarity": 0.9446400270186751
+ },
+ {
+  "temperature": 1.2,
+  "notes_in_key": 0.9465194264455647,
+  "variety": 0.8869333333333334,
+  "avg_melodic_jump": 1.491398025346301,
+  "pitch_class_similarity": 0.9494503534926177
+ }
+]

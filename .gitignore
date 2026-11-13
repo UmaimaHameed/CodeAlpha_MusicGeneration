@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+
+# Big or re-creatable data (run collect_data.py to get it again)
+data/
+
+# Your own generated experiments (put the best ones in samples/ instead)
+output/
+output_*/
+
+# Keep: model/ (trained model), processed/ (so the app runs right after cloning),
+#       evaluation/ (results), samples/ (best generated pieces), .streamlit/config.toml

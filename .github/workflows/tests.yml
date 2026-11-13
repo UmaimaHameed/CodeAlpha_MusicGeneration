@@ -1,0 +1,20 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install PyTorch (CPU version, small)
+        run: pip install torch --index-url https://download.pytorch.org/whl/cpu
+      - name: Install the other requirements
+        run: pip install -r requirements.txt pytest
+      - name: Run the tests
+        run: python -m pytest -q

@@ -1,0 +1,28 @@
+{
+ "real": {
+  "scale_ratio": 0.9326149208912874,
+  "distinct_4gram": 0.899553752535497,
+  "rest_ratio": 0.010677639719546234,
+  "avg_polyphony": 3.855516561161237,
+  "pitch_range": 31.36105476673428,
+  "avg_leap": 1.3238625019741157,
+  "avg_note_length": 0.6351389726144469
+ },
+ "generated": {
+  "scale_ratio": 0.9603374277997841,
+  "distinct_4gram": 0.8309333333333335,
+  "rest_ratio": 0.0020833333333333333,
+  "avg_polyphony": 3.92145181255526,
+  "pitch_range": 31.133333333333333,
+  "avg_leap": 1.1680714285714286,
+  "avg_note_length": 0.5921750663129972
+ },
+ "pitch_class_similarity": 0.9559461862683407,
+ "samples": 30,
+ "settings": {
+  "temperature": 0.9,
+  "top_k": 8,
+  "top_p": 0.95,
+  "no_repeat": 0
+ }
+}
