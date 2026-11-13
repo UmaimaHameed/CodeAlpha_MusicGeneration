@@ -109,14 +109,29 @@ My run: 431 songs (388 for training, 43 for validation), 4,595 training pieces, 
 `python baseline.py` compares the LSTM with a random guess and with n-gram models (they only count what followed the last
 few tokens) on the same validation pieces. Lower perplexity is better.
 
-<!-- paste the table from evaluation/baseline.md here -->
+| Model | Validation loss | Perplexity | Next-token accuracy |
+|---|---|---|---|
+| Random guess | 4.248 | 70.00 | 1.4% |
+| Unigram (no context) | 3.312 | 27.43 | 13.2% |
+| Bigram (1 token of context) | 2.397 | 10.99 | 27.0% |
+| Trigram (2 tokens) | 2.108 | 8.23 | 34.7% |
+| 4-gram (3 tokens) | 1.895 | 6.65 | 42.2% |
+| LSTM (our model) | 1.051 | 2.86 | 66.5% |
+
 
 ### Effect of the temperature
 
 `python evaluate.py --sweep` shows how the setting changes the music. Low temperature is safe but repeats more,
 high temperature is more varied but leaves the key sooner.
 
-<!-- paste the table from evaluation/sweep.md here -->
+| Temperature | Notes in key | Variety | Melodic jump | Pitch-class similarity |
+|---|---|---|---|---|
+| 0.6 | 0.98 | 0.73 | 0.99 | 0.89 |
+| 0.8 | 0.96 | 0.84 | 1.10 | 0.95 |
+| 1.0 | 0.96 | 0.85 | 1.43 | 0.95 |
+| 1.2 | 0.93 | 0.89 | 1.55 | 0.97 |
+| *real music* | 0.93 | 0.90 | 1.32 | 1.00 |
+
 
 ### Listen
 
